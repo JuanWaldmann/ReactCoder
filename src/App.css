@@ -25,3 +25,19 @@
   right: 5rem;
   justify-content: end;
 }
+.item-count-container {
+  background-color: rgb(221, 221, 221);
+  width: 8rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  display: inline-block;
+}
+.stock-container-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.item-count-container button {
+  width: 100%;
+}

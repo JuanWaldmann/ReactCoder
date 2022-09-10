@@ -18,14 +18,10 @@ const NavBar = () => {
             </nav>
 
             <CartWidget />
-            <ItemListContainer />
+        
         </>
     )
 }
-const ItemListContainer = () => {
-    return (
-        <p className='center'>Catalogo</p>
-    )
-}
+
 
 export default NavBar;
