@@ -1,0 +1,23 @@
+const [producto, setProducto] = useState();
+    const [imagen, setImagen] = useState();
+
+   /* FETCH */
+  useEffect(() => {
+    fetchProducto()
+  }, []);
+
+  /* FETCH FUNCTION */
+  const fetchProducto = async () => {
+    await fetch(apiProdcuto)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setProducto(data);
+        setImagen(data.pictures[0].url)
+        
+      })
+      .catch(() => {
+        console.log("ups algo salio mal");
+      });
+  };
