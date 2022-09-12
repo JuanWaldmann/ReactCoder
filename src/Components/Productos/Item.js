@@ -1,6 +1,6 @@
 import React from "react";
 
-const TarjetaProducto = (props) => {
+const Item = (props) => {
     const producto = props.producto
     return (
     <article className="producto-container">
@@ -16,4 +16,4 @@ const TarjetaProducto = (props) => {
   );
 };
 
-export default TarjetaProducto;
+export default Item;

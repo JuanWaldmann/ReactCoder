@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { listaProductos } from "../../Constants/database";
 import { Loading } from "../Loading";
 import "./productos.css";
-import TarjetaProducto from "./TarjetaProducto";
+import Item from "./Item";
 
-const Productos = () => {
+const ItemList = () => {
   const [productos, setProductos] = useState([]);
 
   /* FETCH */
@@ -25,7 +25,7 @@ const Productos = () => {
       <div className="lista-productos">
         {productos.map((producto) => {
           return (
-            <TarjetaProducto producto={producto} key={producto.id} />
+            <Item producto={producto} key={producto.id} />
           );
         })}
       </div>
@@ -33,4 +33,4 @@ const Productos = () => {
   );
 };
 
-export default Productos;
+export default ItemList;

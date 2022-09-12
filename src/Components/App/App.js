@@ -2,15 +2,13 @@ import React from "react";
 import "./App.css";
 import NavBar from "../NavBar/NavBar";
 import ItemCount from "../Items/ItemCount";
-import Productos from "../Productos/Productos";
+import ItemList from "../Productos/ItemList";
 
 function App() {
   return (
     <>
       <NavBar />
       <ItemListContainer greeting={bienvenido} />
- 
-      
     </>
   );
 }
@@ -25,7 +23,9 @@ const ItemListContainer = () => {
   return (
     <>
       <h3 className="center">{bienvenido}</h3>
-      <div className='center'><Productos /></div>
+      <div className="center">
+        <ItemList />
+      </div>
       <ItemCount />
     </>
   );
