@@ -23,7 +23,7 @@
   display: flex;
   position: relative;
   right: 5rem;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .item-count-container {
   background-color: rgb(221, 221, 221);

@@ -1,18 +1,21 @@
 import React, {useState} from 'react'
 
-let stock = 10
-
-const ItemCount = () => {
-    const [acumulador, setAcumulador] = useState(1)
-
+const ItemCount = (props) => {
+    
+    let [acumulador, setAcumulador] = useState(props.initial)
+    let [cart, setCart] = useState(0)
 
     const actionClickAdd = () => {
-        if (acumulador < stock ){
+        if (acumulador < props.stock ){
         setAcumulador(acumulador + 1);
         } else {
             alert('No tenemos suficiente stock, Vuelva prontos.')
         }
     }
+    const onAdd = () =>{
+        cart == 1 ? setCart(acumulador) : setCart(cart + acumulador)
+    } 
+    
     const actionClickSub = () => {
         
         if (acumulador > 1 ){
@@ -27,10 +30,11 @@ const ItemCount = () => {
             <div className='item-count-container'>
                 <h4 className='center'>Cantidad</h4>
                 <h3 className='center'>{acumulador}</h3>
+                <h4>Items en el carrito {cart}</h4>
                 <button onClick={actionClickAdd}>Sumar</button>
                 <button onClick={actionClickSub}>Restar</button>
             </div>
-                <button>Agregar Al Carrito</button>
+                <button onClick={onAdd}>Agregar Al Carrito</button>
         </div>
         </>
     )

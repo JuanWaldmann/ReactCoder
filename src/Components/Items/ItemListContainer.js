@@ -2,7 +2,7 @@ import React from "react";
 import ItemCount from "../Items/ItemCount";
 import ItemList from "../Productos/ItemList";
 
-export const usuario = "Matias Ponce"; 
+export const usuario = "Matias"; 
 export const bienvenido =
 "Bienvenido " +
 usuario +
@@ -13,10 +13,10 @@ const ItemListContainer = () => {
   return (
     <>
       <h3 className="center">{bienvenido}</h3>
-      <div className="center">
+      
         <ItemList />
-      </div>
-      <ItemCount />
+      
+      <ItemCount stock={50} initial={2} />
     </>
   );
 };

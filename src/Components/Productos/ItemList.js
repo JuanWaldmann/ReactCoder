@@ -27,7 +27,8 @@ const ItemList = () => {
           return (
             <Item producto={producto} key={producto.id} />
           );
-        })}
+        }, []
+        )}
       </div>
     </main>
   );
