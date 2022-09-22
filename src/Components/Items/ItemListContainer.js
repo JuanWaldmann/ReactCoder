@@ -16,7 +16,7 @@ const ItemListContainer = () => {
       
         <ItemList />
       
-      <ItemCount stock={50} initial={2} />
+      <ItemCount stock={15} initial={1} />
     </>
   );
 };
