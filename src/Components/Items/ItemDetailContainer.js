@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ItemDetail from "../Productos/ItemDetail";
 import { listaProductos } from "../../Constants/database";
-import { Loading } from "../Loading";
+
 
 
 
@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
     const [producto, setProductos] = useState([]);
     useEffect(() => {
       setTimeout(() => {
-        setProductos(listaProductos);
+        setProductos(listaProductos[0]);
       }, 3000);
     }, []);
     

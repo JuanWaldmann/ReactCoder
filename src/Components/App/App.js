@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer greeting={bienvenido} />
       <ItemDetailContainer />
+      <ItemListContainer greeting={bienvenido} />
     </>
   );
 }

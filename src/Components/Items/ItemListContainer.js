@@ -13,10 +13,10 @@ const ItemListContainer = () => {
   return (
     <>
       <h3 className="center">{bienvenido}</h3>
+      <ItemCount stock={15} initial={1} />
       
         <ItemList />
       
-      <ItemCount stock={15} initial={1} />
     </>
   );
 };

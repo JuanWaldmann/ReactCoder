@@ -1,27 +1,16 @@
 import React from 'react'
-import ItemCount from '../Items/ItemCount';
-import ItemDetailContainer from '../Items/ItemDetailContainer';
-import { listaProductos } from '../../Constants/database';
 
-const ItemDetail = ({}) => {
+const ItemDetail = ({ producto }) => {
 
   return (
-    <div className="my-5">
+    <div className='card-top'>
+      <div>Estas Viendo: <strong>{producto.name}</strong> </div>
+      <img src={producto.imageURL} width={200} alt="" />
       <div>
-        <section>Estas viendo: </section>
-        <div>
-          <div>
-            <div>
-              <img/>
-            </div>
-            <div>
-              <span></span>
-              <span className="my-3"></span>
-              
-            </div>
-          </div>
-        </div>
+        <p>Precio: ${producto.price}</p>
+        <p>Descripcion: {producto.description}</p>
       </div>
+        
     </div>
   )
 }
