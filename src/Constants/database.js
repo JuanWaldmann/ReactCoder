@@ -11,6 +11,7 @@ export const listaProductos = [
         id: 1,
         name: 'Producto 1',
         categoria: 'Placas de video',
+        ruta: '/categoria/placas-de-video',
         price : 500,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus eaque vitae explicabo voluptate praesentium et harum magnam eius consequuntur expedita unde optio! Repudiandae, eos?",
         imageURL: 'https://www.venex.com.ar/products_images/1639583098_placa-de-video-asus-nvidia-geforce-rtx-3080-rog-strix-o10gb-lhr.jpg',
@@ -21,7 +22,8 @@ export const listaProductos = [
     {
         id: 2,
         name: 'Producto 2',
-        categoria: 'Placas de video',
+        categoria: 'Motherboards',
+        ruta: '/categoria/motherboards',
         price : 500,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus eaque vitae explicabo voluptate praesentium et harum magnam eius consequuntur expedita unde optio! Repudiandae, eos?",
         imageURL: 'https://www.venex.com.ar/products_images/1639583098_placa-de-video-asus-nvidia-geforce-rtx-3080-rog-strix-o10gb-lhr.jpg',
@@ -32,7 +34,8 @@ export const listaProductos = [
     {
         id: 3,
         name: 'Producto 3',
-        categoria: 'Placas de video',
+        categoria: 'Procesadores',
+        ruta: '/categoria/procesadores',
         price : 300,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus eaque vitae explicabo voluptate praesentium et harum magnam eius consequuntur expedita unde optio! Repudiandae, eos?",
         imageURL: 'https://www.venex.com.ar/products_images/1639583098_placa-de-video-asus-nvidia-geforce-rtx-3080-rog-strix-o10gb-lhr.jpg',
@@ -43,7 +46,8 @@ export const listaProductos = [
     {
         id: 4,
         name: 'Producto 4',
-        categoria: 'Placas de video',
+        categoria: 'Almacenamiento',
+        ruta: '/categoria/almacenamiento',
         price : 300,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus eaque vitae explicabo voluptate praesentium et harum magnam eius consequuntur expedita unde optio! Repudiandae, eos?",
         imageURL: 'https://www.venex.com.ar/products_images/1639583098_placa-de-video-asus-nvidia-geforce-rtx-3080-rog-strix-o10gb-lhr.jpg',
@@ -54,7 +58,8 @@ export const listaProductos = [
     {
         id: 5,
         name: 'Producto 5',
-        categoria: 'Placas de video',
+        categoria: 'Refrigeracion',
+        ruta: '/categoria/refrigeracion',
         price : 300,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus eaque vitae explicabo voluptate praesentium et harum magnam eius consequuntur expedita unde optio! Repudiandae, eos?",
         imageURL: 'https://www.venex.com.ar/products_images/1639583098_placa-de-video-asus-nvidia-geforce-rtx-3080-rog-strix-o10gb-lhr.jpg',
@@ -65,7 +70,8 @@ export const listaProductos = [
     {
         id: 6,
         name: 'Producto 6',
-        categoria: 'Placas de video',
+        categoria: 'Gabinetes',
+        ruta: '/categoria/gabinetes',
         price : 300,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus eaque vitae explicabo voluptate praesentium et harum magnam eius consequuntur expedita unde optio! Repudiandae, eos?",
         imageURL: 'https://www.venex.com.ar/products_images/1639583098_placa-de-video-asus-nvidia-geforce-rtx-3080-rog-strix-o10gb-lhr.jpg',
@@ -76,7 +82,8 @@ export const listaProductos = [
     {
         id: 7,
         name: 'Producto 7',
-        categoria: 'Placas de video',
+        categoria: 'Memorias',
+        ruta: '/categoria/memorias',
         price : 300,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus eaque vitae explicabo voluptate praesentium et harum magnam eius consequuntur expedita unde optio! Repudiandae, eos?",
         imageURL: 'https://www.venex.com.ar/products_images/1639583098_placa-de-video-asus-nvidia-geforce-rtx-3080-rog-strix-o10gb-lhr.jpg',
@@ -87,23 +94,14 @@ export const listaProductos = [
     {
         id: 8,
         name: 'Producto 8',
-        categoria: 'Placas de video',
+        categoria: 'Audio',
+        ruta: '/categoria/audio',
         price : 300,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus eaque vitae explicabo voluptate praesentium et harum magnam eius consequuntur expedita unde optio! Repudiandae, eos?",
         imageURL: 'https://www.venex.com.ar/products_images/1639583098_placa-de-video-asus-nvidia-geforce-rtx-3080-rog-strix-o10gb-lhr.jpg',
         imageAlt: 'imageAlt',
         stock: 10,
         subtitulo: 'rtx3080'
-    },{
-        id: 9,
-        name: 'Producto 9',
-        categoria: 'Placas de video',
-        price : 300,
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus eaque vitae explicabo voluptate praesentium et harum magnam eius consequuntur expedita unde optio! Repudiandae, eos?",
-        imageURL: 'https://www.venex.com.ar/products_images/1639583098_placa-de-video-asus-nvidia-geforce-rtx-3080-rog-strix-o10gb-lhr.jpg',
-        imageAlt: 'imageAlt',
-        stock: 10,
-        subtitulo: 'rtx3080'
-    }  
+    }
 ]
 

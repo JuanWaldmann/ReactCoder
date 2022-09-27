@@ -41,3 +41,14 @@
 .item-count-container button {
   width: 100%;
 }
+a{
+  padding: 1rem;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
