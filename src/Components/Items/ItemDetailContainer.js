@@ -6,7 +6,6 @@ import { listaProductos } from "../../Constants/database";
 
 
 
-
 const ItemDetailContainer = () => {
     const [producto, setProductos] = useState([]);
     useEffect(() => {
@@ -20,6 +19,7 @@ const ItemDetailContainer = () => {
         <div className="lista-productos">
             <ItemDetail producto={producto} key={producto.id} />;
         </div>
+        
     </>
   );
 };

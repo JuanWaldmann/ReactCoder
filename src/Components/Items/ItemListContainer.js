@@ -1,22 +1,18 @@
 import React from "react";
-import ItemCount from "../Items/ItemCount";
 import ItemList from "../Productos/ItemList";
 
-export const usuario = "Matias"; 
+export const usuario = "Matias";
 export const bienvenido =
-"Bienvenido " +
-usuario +
-" a nuestro E-commerce, por aqui debajo encontrarás nuestras mejores ofertas";
+  "Bienvenido " +
+  usuario +
+  " a nuestro E-commerce, por aqui debajo encontrarás nuestras mejores ofertas";
 
 const ItemListContainer = () => {
-
   return (
     <>
       <h3 className="center">{bienvenido}</h3>
-      <ItemCount stock={15} initial={1} />
-      
-        <ItemList />
-      
+
+      <ItemList />
     </>
   );
 };

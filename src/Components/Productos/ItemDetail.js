@@ -1,6 +1,14 @@
 import React from 'react'
+import { useState } from 'react';
+import ItemCount from '../Items/ItemCount';
 
 const ItemDetail = ({ producto }) => {
+
+  const [agregar, setAgregar] = useState(1)
+  const agregarAlCarrito = (agregado) => {
+    agregado >= 1 ? setAgregar(agregado) : setAgregar(agregar + agregado)
+    console.log(agregar)     
+  }
 
   return (
     <div className='card-top'>
@@ -9,8 +17,8 @@ const ItemDetail = ({ producto }) => {
       <div>
         <p>Precio: ${producto.price}</p>
         <p>Descripcion: {producto.description}</p>
+      <ItemCount agregar={agregarAlCarrito} stock={15} initial={1} />
       </div>
-        
     </div>
   )
 }
